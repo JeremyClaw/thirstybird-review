@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThirstyBird — Product Review & Concept Direction</title>
+  <meta name="description" content="Developer-facing review site for ThirstyBird: product overview, app UI/UX audit, and proposed design direction." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark">TB</span>
+        <div>
+          <div class="brand-name">ThirstyBird</div>
+          <div class="brand-sub">Product review + concept direction</div>
+        </div>
+      </div>
+      <nav class="nav desktop-nav">
+        <button class="tab-link active" data-tab="overview">Overview</button>
+        <button class="tab-link" data-tab="audit">Audit</button>
+        <button class="tab-link" data-tab="concept">Concept</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-shell">
+    <section class="hero-intro">
+      <div class="hero-copy">
+        <span class="eyebrow">Developer handoff page</span>
+        <h1>Everything your developer needs to understand the current product, what’s broken, and what it should become.</h1>
+        <p class="hero-lead">
+          This page combines three things in one place: a clear explanation of what ThirstyBird does, a user-perspective mobile app UI/UX audit, and a stronger proposed design direction for both the landing page and the app itself.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary tab-link active" data-tab="overview">Start with overview</button>
+          <button class="btn btn-secondary tab-link" data-tab="audit">Read app audit</button>
+          <button class="btn btn-secondary tab-link" data-tab="concept">See proposed UI direction</button>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span>3</span><p>developer tabs</p></div>
+        <div class="hero-stat"><span>1</span><p>clear product story</p></div>
+        <div class="hero-stat"><span>6</span><p>priority improvements</p></div>
+      </div>
+    </section>
+
+    <section class="tab-bar mobile-tab-bar">
+      <button class="tab-link active" data-tab="overview">Overview</button>
+      <button class="tab-link" data-tab="audit">Audit</button>
+      <button class="tab-link" data-tab="concept">Concept</button>
+    </section>
+
+    <section id="overview" class="tab-panel active">
+      <div class="section-heading">
+        <span class="eyebrow">Tab 1</span>
+        <h2>What ThirstyBird is, why it matters, and what the website should communicate</h2>
+      </div>
+
+      <div class="grid-2 overview-top">
+        <article class="panel card-xl">
+          <h3>Product summary</h3>
+          <p>
+            ThirstyBird is a mobile platform that allows users to pre-purchase discounted drinks at licensed venues such as bars and restaurants, with each offer tied to a specific time window set by the venue.
+          </p>
+          <p>
+            The platform helps venues drive traffic during off-peak hours by offering controlled, time-based promotions, while giving consumers an easy way to discover deals, save money, and skip payment friction when ordering.
+          </p>
+          <p>
+            Long-term, ThirstyBird can become a scalable marketplace connecting consumers, venues, and eventually alcohol brands — turning fragmented promotions into a measurable and repeatable growth channel for hospitality.
+          </p>
+        </article>
+
+        <article class="panel card-xl gradient-panel">
+          <h3>What the current presentation under-communicates</h3>
+          <ul>
+            <li>That this is more than a deal directory — it is a structured demand-generation platform for venues.</li>
+            <li>That pre-purchase removes friction and creates a better customer experience at the bar.</li>
+            <li>That timed promotions are the core mechanic and key differentiator.</li>
+            <li>That there is a future media / brand / growth platform opportunity underneath the consumer app.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="section-heading narrow top-gap">
+        <span class="eyebrow">Suggested website structure</span>
+        <h2>A cleaner home / lander narrative</h2>
+      </div>
+
+      <div class="steps four-up">
+        <article class="step">
+          <div class="step-no">01</div>
+          <h3>Hero</h3>
+          <p>Lead with the core promise: find discounted drinks near you, lock them in before you arrive, and help venues fill quiet hours.</p>
+        </article>
+        <article class="step">
+          <div class="step-no">02</div>
+          <h3>How it works</h3>
+          <p>Simple three-step explanation for both users and venues: create offer, pre-purchase, redeem during the valid window.</p>
+        </article>
+        <article class="step">
+          <div class="step-no">03</div>
+          <h3>Why venues win</h3>
+          <p>Focus on traffic shaping, predictable offers, stock movement, and future measurability.</p>
+        </article>
+        <article class="step">
+          <div class="step-no">04</div>
+          <h3>Why users win</h3>
+          <p>Focus on better prices, easier decisions, and less payment friction when going out.</p>
+        </article>
+      </div>
+
+      <div class="section-heading narrow top-gap">
+        <span class="eyebrow">Website copy direction</span>
+        <h2>Example landing-page messaging</h2>
+      </div>
+
+      <div class="lander-preview panel">
+        <div class="mini-eyebrow">Example hero copy</div>
+        <h3>Fill quiet hours. Sell more drinks. Give people a better reason to go out.</h3>
+        <p>
+          ThirstyBird turns drink specials into a measurable marketplace — helping venues drive off-peak traffic with timed, prepaid offers while helping customers save money and skip payment friction.
+        </p>
+        <div class="hero-points">
+          <span>Timed promotions</span>
+          <span>Prepaid vouchers</span>
+          <span>Venue traffic uplift</span>
+          <span>Consumer savings</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="audit" class="tab-panel">
+      <div class="section-heading">
+        <span class="eyebrow">Tab 2</span>
+        <h2>Full app UI / UX audit from the user perspective</h2>
+        <p>
+          Based on the mobile flow reviewed across home, search, categories, filters, deal detail, cart, wallet, profile, and empty states.
+        </p>
+      </div>
+
+      <div class="audit-summary panel summary-panel">
+        <div>
+          <span class="score good">7 / 10</span>
+          <h3>Overall assessment</h3>
+        </div>
+        <p>
+          ThirstyBird is structurally solid and easy enough to understand, but it is under-designed relative to the strength of the business idea. The core opportunity is less about fixing broken usability and more about improving hierarchy, trust, brand identity, and emotional pull.
+        </p>
+      </div>
+
+      <div class="section-subgrid top-gap">
+        <article class="deep-card">
+          <div class="deep-head"><h3>Home / Browse</h3><span class="score good">7.5 / 10</span></div>
+          <ul>
+            <li><strong>Working:</strong> simple browsing, clear search, usable categories, easy scanning.</li>
+            <li><strong>Issue:</strong> weak top-of-screen value prop; the app opens with listings, not a powerful reason to care.</li>
+            <li><strong>Recommendation:</strong> add modules like <em>Live now</em>, <em>Ending soon</em>, <em>Best nearby</em>, and strengthen the message around prepaid convenience and timed offers.</li>
+          </ul>
+        </article>
+
+        <article class="deep-card">
+          <div class="deep-head"><h3>Categories + Search</h3><span class="score good">7 / 10</span></div>
+          <ul>
+            <li><strong>Working:</strong> obvious search bar, familiar category entry points.</li>
+            <li><strong>Issue:</strong> category treatment feels generic and visually underpowered.</li>
+            <li><strong>Recommendation:</strong> improve iconography, active states, and add more user-driven sort/filter options like <em>On now</em>, <em>Ends soon</em>, <em>Best value</em>.</li>
+          </ul>
+        </article>
+
+        <article class="deep-card">
+          <div class="deep-head"><h3>Deal cards</h3><span class="score mid">6.5 / 10</span></div>
+          <ul>
+            <li><strong>Working:</strong> readable cards, discount visible, venue/time/price all present.</li>
+            <li><strong>Issue:</strong> hierarchy is too soft; cards explain but do not sell.</li>
+            <li><strong>Recommendation:</strong> push discount, time urgency, original vs discounted price, and venue trust much harder.</li>
+          </ul>
+        </article>
+
+        <article class="deep-card">
+          <div class="deep-head"><h3>Deal detail</h3><span class="score good">7 / 10</span></div>
+          <ul>
+            <li><strong>Working:</strong> strong image, visible CTA, valid times and venue info included.</li>
+            <li><strong>Issue:</strong> detail page is functional but not persuasive enough; terms feel a bit admin-heavy.</li>
+            <li><strong>Recommendation:</strong> add reassurance like <em>instantly added to wallet after payment</em> and improve redemption clarity.</li>
+          </ul>
+        </article>
+
+        <article class="deep-card">
+          <div class="deep-head"><h3>Cart</h3><span class="score good">7.5 / 10</span></div>
+          <ul>
+            <li><strong>Working:</strong> easy to understand, checkout CTA clear, Peach Payments trust cue helps.</li>
+            <li><strong>Issue:</strong> visually plain for such an important commitment moment.</li>
+            <li><strong>Recommendation:</strong> add stronger purchase reassurance, total savings emphasis, and clearer post-payment expectations.</li>
+          </ul>
+        </article>
+
+        <article class="deep-card">
+          <div class="deep-head"><h3>Wallet + Profile</h3><span class="score good">7 / 10</span></div>
+          <ul>
+            <li><strong>Working:</strong> right IA and tab logic, profile is clean and understandable.</li>
+            <li><strong>Issue:</strong> both surfaces feel too generic; wallet should feel like a flagship utility, profile like a value hub.</li>
+            <li><strong>Recommendation:</strong> improve active/redeemed voucher states, strengthen support/help clarity, and make savings feel more rewarding.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="section-heading narrow top-gap">
+        <span class="eyebrow">Priority actions</span>
+        <h2>What the developer should tackle first</h2>
+      </div>
+
+      <div class="priority-grid">
+        <article class="priority-card high">
+          <span class="priority-label">High priority</span>
+          <h3>1. Rework home-screen hierarchy</h3>
+          <p>Make the app’s core promise obvious in the first few seconds. Less generic listing feed, more guided discovery.</p>
+        </article>
+        <article class="priority-card high">
+          <span class="priority-label">High priority</span>
+          <h3>2. Redesign offer cards</h3>
+          <p>Stronger discount emphasis, urgency, pricing contrast, and trust signals.</p>
+        </article>
+        <article class="priority-card high">
+          <span class="priority-label">High priority</span>
+          <h3>3. Upgrade the visual system</h3>
+          <p>Move from generic light marketplace UI to a premium nightlife / hospitality identity.</p>
+        </article>
+        <article class="priority-card mid">
+          <span class="priority-label">Medium priority</span>
+          <h3>4. Improve detail-page reassurance</h3>
+          <p>Clarify redemption, wallet delivery, and what happens after payment.</p>
+        </article>
+        <article class="priority-card mid">
+          <span class="priority-label">Medium priority</span>
+          <h3>5. Improve filter logic</h3>
+          <p>Add user-intent filters like On now, Ends soon, Best value, Closest, Most popular.</p>
+        </article>
+        <article class="priority-card mid">
+          <span class="priority-label">Medium priority</span>
+          <h3>6. Treat wallet as a product feature</h3>
+          <p>Active / used / expired states should be clearer, more premium, and easier to trust at a glance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="concept" class="tab-panel">
+      <div class="section-heading">
+        <span class="eyebrow">Tab 3</span>
+        <h2>What the product should feel like instead</h2>
+        <p>
+          The goal is not to make ThirstyBird flashy for the sake of it. The goal is to make the product feel as valuable as the business idea actually is.
+        </p>
+      </div>
+
+      <div class="concept-grid">
+        <div class="concept-copy panel card-xl">
+          <h3>Target design direction</h3>
+          <ul>
+            <li>Premium nightlife utility, not generic marketplace</li>
+            <li>Richer contrast and stronger hierarchy</li>
+            <li>Warmer hospitality palette with more appetite and energy</li>
+            <li>Offer cards that feel merchandised, not merely listed</li>
+            <li>Wallet and redemption states that feel trusted and useful</li>
+            <li>Microcopy that explains redemption clearly without admin heaviness</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual concept-phone">
+          <div class="phone-shell">
+            <div class="phone-top"></div>
+            <div class="screen">
+              <div class="screen-header">
+                <div>
+                  <div class="screen-brand">ThirstyBird</div>
+                  <div class="screen-sub">Tonight’s best specials near you</div>
+                </div>
+                <div class="chip live">LIVE</div>
+              </div>
+
+              <div class="search-pill">Search bars, drinks or districts</div>
+
+              <div class="categories">
+                <div class="cat">🍷<span>Wine</span></div>
+                <div class="cat active">🍸<span>Cocktails</span></div>
+                <div class="cat">🍺<span>Beer</span></div>
+              </div>
+
+              <div class="deal-card featured">
+                <div class="deal-badge">40% OFF</div>
+                <div class="deal-top">
+                  <div>
+                    <h3>Golden Hour Spritz Special</h3>
+                    <p>Yours Truly • Gardens</p>
+                  </div>
+                  <div class="price">
+                    <span class="old">R120</span>
+                    <strong>R72</strong>
+                  </div>
+                </div>
+                <div class="deal-meta">
+                  <span>Today • 4pm–6pm</span>
+                  <span>Prepaid • Skip the bill</span>
+                </div>
+              </div>
+
+              <div class="mini-list">
+                <div class="mini-card">
+                  <div>
+                    <strong>2-for-1 Drafts</strong>
+                    <p>Carlyle’s • 12pm–3pm</p>
+                  </div>
+                  <span>R50</span>
+                </div>
+                <div class="mini-card">
+                  <div>
+                    <strong>After Work G&T</strong>
+                    <p>The Shack • 5pm–7pm</p>
+                  </div>
+                  <span>R78</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading narrow top-gap">
+        <span class="eyebrow">Proposed app screens</span>
+        <h2>What the app could look like with a stronger product and brand system</h2>
+        <p>
+          These are not production screens — they’re direction-setters. The point is to show stronger hierarchy, better merchandising, and a more premium hospitality feel.
+        </p>
+      </div>
+
+      <div class="mockup-grid">
+        <article class="mockup-card panel">
+          <div class="mockup-head">
+            <div>
+              <span class="mini-eyebrow">Screen 1</span>
+              <h3>Redesigned home</h3>
+            </div>
+            <p>Guided discovery instead of a flat feed.</p>
+          </div>
+          <div class="phone-mini">
+            <div class="mini-screen dark-home">
+              <div class="mini-top">
+                <div>
+                  <strong>Good evening, Deej</strong>
+                  <span>Best deals around you right now</span>
+                </div>
+                <div class="mini-pill green">LIVE</div>
+              </div>
+              <div class="hero-module">
+                <span class="mini-eyebrow small">Ending soon</span>
+                <h4>2-for-1 Spritz Hour</h4>
+                <p>Yours Truly • 4pm–6pm • Save 40%</p>
+              </div>
+              <div class="quick-row">
+                <span class="quick-chip active">On now</span>
+                <span class="quick-chip">Best value</span>
+                <span class="quick-chip">Closest</span>
+              </div>
+              <div class="stack-card">
+                <strong>Golden Hour G&Ts</strong>
+                <small>Cape Town • 5pm–7pm</small>
+                <div class="stack-meta"><span>R72</span><em>40% off</em></div>
+              </div>
+              <div class="stack-card muted-card">
+                <strong>After Work Drafts</strong>
+                <small>Carlyle's • 12pm–3pm</small>
+                <div class="stack-meta"><span>R50</span><em>2-for-1</em></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="mockup-card panel">
+          <div class="mockup-head">
+            <div>
+              <span class="mini-eyebrow">Screen 2</span>
+              <h3>Upgraded deal card system</h3>
+            </div>
+            <p>Cards that sell, not just list.</p>
+          </div>
+          <div class="card-system-preview">
+            <div class="offer-card-large">
+              <div class="offer-badge">40% OFF</div>
+              <h4>Golden Hour Spritz Special</h4>
+              <p>Yours Truly • Gardens</p>
+              <div class="offer-pricing">
+                <span class="old">R120</span>
+                <strong>R72</strong>
+              </div>
+              <div class="offer-footer">
+                <span>Today • 4pm–6pm</span>
+                <span>Prepaid</span>
+              </div>
+            </div>
+            <ul class="spec-list">
+              <li>Discount is visually dominant</li>
+              <li>Timing is urgent and obvious</li>
+              <li>Price contrast is stronger</li>
+              <li>Venue and redemption cues stay visible</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="mockup-card panel">
+          <div class="mockup-head">
+            <div>
+              <span class="mini-eyebrow">Screen 3</span>
+              <h3>Sharper deal detail</h3>
+            </div>
+            <p>More confidence before checkout.</p>
+          </div>
+          <div class="phone-mini">
+            <div class="mini-screen detail-screen">
+              <div class="detail-image">🍹</div>
+              <div class="detail-body">
+                <h4>Golden Hour Spritz Special</h4>
+                <p>Save R48 • valid today from 4pm–6pm</p>
+                <div class="detail-trust">
+                  <span>Licensed venue</span>
+                  <span>Instant wallet delivery</span>
+                </div>
+                <div class="info-block">
+                  <strong>How redemption works</strong>
+                  <small>Pay now. Voucher appears in Wallet instantly. Redeem at the venue during the valid time window.</small>
+                </div>
+                <div class="bottom-buy">
+                  <div><small>Total</small><strong>R72</strong></div>
+                  <button class="buy-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="mockup-card panel">
+          <div class="mockup-head">
+            <div>
+              <span class="mini-eyebrow">Screen 4</span>
+              <h3>Wallet as a flagship feature</h3>
+            </div>
+            <p>Make redemption calm and obvious.</p>
+          </div>
+          <div class="phone-mini">
+            <div class="mini-screen wallet-screen">
+              <div class="wallet-tabs">
+                <span class="wallet-tab active">Active</span>
+                <span class="wallet-tab">Used</span>
+                <span class="wallet-tab">Expired</span>
+              </div>
+              <div class="voucher-card">
+                <div class="voucher-top">
+                  <strong>Golden Hour Spritz</strong>
+                  <span class="mini-pill amber">Use today</span>
+                </div>
+                <p>Yours Truly • 4pm–6pm</p>
+                <div class="voucher-code">TB-2481-9921</div>
+                <div class="voucher-footer">
+                  <span>1 x voucher</span>
+                  <span>Tap to redeem</span>
+                </div>
+              </div>
+              <div class="support-note">Need help? Support and terms are one tap away.</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="mockup-card panel">
+          <div class="mockup-head">
+            <div>
+              <span class="mini-eyebrow">Screen 5</span>
+              <h3>Profile with more value</h3>
+            </div>
+            <p>Make account feel like loyalty, not admin.</p>
+          </div>
+          <div class="phone-mini">
+            <div class="mini-screen profile-screen">
+              <div class="profile-hero">
+                <strong>Jeremy Clawkson</strong>
+                <span>Total saved: R482</span>
+              </div>
+              <div class="profile-item"><span>Invite friends</span><em>Earn rewards</em></div>
+              <div class="profile-item"><span>Payment methods</span><em>Manage cards</em></div>
+              <div class="profile-item"><span>Support</span><em>Help & FAQs</em></div>
+              <div class="profile-item"><span>Venue owner?</span><em>List your venue</em></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="section-heading narrow top-gap">
+        <span class="eyebrow">App redesign principles</span>
+        <h2>How I’d translate this into the actual app</h2>
+      </div>
+
+      <div class="recommend-grid">
+        <div class="recommend-card"><strong>1. Home should guide behaviour</strong><p>Prioritise live deals, urgency, and local relevance over a flat feed of offers.</p></div>
+        <div class="recommend-card"><strong>2. Cards should sell</strong><p>Stronger pricing contrast, better deal naming, clearer timing, and more persuasive scan paths.</p></div>
+        <div class="recommend-card"><strong>3. Darker premium mode</strong><p>A richer hospitality palette can make the brand feel more memorable and premium.</p></div>
+        <div class="recommend-card"><strong>4. Wallet should feel bulletproof</strong><p>Voucher state design should optimise confidence, quick scanning, and in-venue usability.</p></div>
+        <div class="recommend-card"><strong>5. Profile should create loyalty</strong><p>Make savings, referrals, and support feel like product value — not just settings.</p></div>
+        <div class="recommend-card"><strong>6. Copy should remove doubt</strong><p>Explain payment, redemption, and validity in calm, direct, user-first language.</p></div>
+      </div>
+
+      <div class="final-cta top-gap">
+        <div>
+          <span class="eyebrow">Next build step</span>
+          <h2>If this direction is approved, the next move is redesigned app screens and a production-ready marketing homepage.</h2>
+          <p>That means turning this review into actual revised mobile screen mockups for home, cards, detail page, wallet, and profile — plus a sharper public-facing site.</p>
+        </div>
+        <div class="cta-actions">
+          <button class="btn btn-primary tab-link" data-tab="audit">Back to audit</button>
+          <button class="btn btn-secondary tab-link" data-tab="overview">Back to overview</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
